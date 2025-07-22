@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scentuary Beauty & Co – Products</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #faf9f7;
+      color: #333;
+    }
+    header {
+    background-color: black;
+    height: 70px;
+    display: flex;
+    align-content: center;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.logo span {
+    display: flex;
+    align-items: center;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 700;
+    max-width: 300px;
+    width: 100%;
+}
+
+    h1 {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: #7b3f00;
+      margin-bottom: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .product-content {
+      padding: 1rem;
+    }
+
+    .product-name {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .product-price {
+      font-weight: bold;
+      color: #7b3f00;
+      margin-bottom: 1rem;
+    }
+
+    .order-button {
+      display: block;
+      width: 100%;
+      padding: 0.75rem;
+      text-align: center;
+      background-color: #7b3f00;
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .order-button:hover {
+      background-color: #5c2f00;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+        <div class="navbar">
+            <div class="logo">
+                <span><img src="/home/perfume logo.png" alt="perfume bottle"><a href="/home/index.html" style="color: #ffff; text-decoration: none;">SCENTUARY BEAUTY</a></span>
+            </div>
+           
+        </div>
+    </header>
+
+  <h1>Our Signature Fragrances</h1>
+
+  <div class="grid">
+    <!-- Each product card with WhatsApp order link -->
+    <div class="product-card">
+      <a href="/ourcollection/khaadi/khaadi.html"><img src="/collection/khaadi-perfume.jpg" alt="KHAADI" /></a>
+      <div class="product-content">
+        <p class="product-name">KHAADI</p>
+        <p class="product-price">₦12,000</p>
+        <a class="order-button" href="https://wa.me/2347015545650?text=I%20would%20like%20to%20order%20KHAADI" target="_blank">Order Now</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <a href="/ourcollection/kaly/kaly.html"><img src="/collection/kaly-perfume.webp" alt="kaly-perfume" /></a>
+      <div class="product-content">
+        <p class="product-name">KALY</p>
+        <p class="product-price">₦15,500</p>
+        <a class="order-button" href="https://wa.me/2347015545650?text=I%20would%20like%20to%20order%20KALY" target="_blank">Order Now</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <a href="/ourcollection/my wayy/mywayy.html"><img src="/collection/my-wayy.jpg" alt="my-wayy" /></a>
+      <div class="product-content">
+        <p class="product-name">MY WAYY</p>
+        <p class="product-price">₦4,800</p>
+        <a class="order-button" href="https://wa.me/2347015545650?text=I%20would%20like%20to%20order%20my%20wayy" target="_blank">Order Now</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <a href="/ourcollection/sugar/sugar.html"><img src="/collection/sugar-perf.webp" alt="sugar-perf" /></a>
+      <div class="product-content">
+        <p class="product-name">SUGER</p>
+        <p class="product-price">₦20,000</p>
+        <a class="order-button" href="https://wa.me/2347015545650?text=I%20would%20like%20to%20order%20SUGER%20PERF" target="_blank">Order Now</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <a href="/ourcollection/oniro/oniro.html"><img src="/collection/oniro 2.jpg" alt="oniro edp" /></a>
+      <div class="product-content">
+        <p class="product-name">ONIRO EAU DE PARFUM</p>
+        <p class="product-price">₦20,000</p>
+        <a class="order-button" href="https://wa.me/2347015545650?text=I%20would%20like%20to%20order%20ONIRO" target="_blank">Order Now</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <a href="/ourcollection/berries/berries.html"><img src="/collection/berries weekend.webp" alt="BERRIES WEEKEND" /></a>
+      <div class="product-content">
+        <p class="product-name">BERRIES WEEKEND EDP</p>
+        <p class="product-price">₦18,500</p>
+        <a class="order-button" href="https://wa.me/2347015545650?text=I%20would%20like%20to%20order%20BERRIES%20WEEKEND" target="_blank">Order Now</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <a href="/ourcollection/ophylia/ophylia.html"><img src="/collection/ophylia edp.webp" alt="Ophylia" /></a>
+      <div class="product-content">
+        <p class="product-name">OPHYLIA EDP</p>
+        <p class="product-price">₦18,000</p>
+        <a class="order-button" href="https://wa.me/2347015545650?text=I%20would%20like%20to%20order%20OPHYLIA" target="_blank">Order Now</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <a href="/ourcollection/zara man/zaraman.html"><img src="/collection/zara man.jpg" alt="ZARA MAN" /></a>
+      <div class="product-content">
+        <p class="product-name">ZARA MAN</p>
+        <p class="product-price">₦18,500</p>
+        <a class="order-button" href="https://wa.me/2347015545650?text=I%20would%20like%20to%20order%20ZARA%20MAN" target="_blank">Order Now</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <a href="/ourcollection/noir paris/noirparis.html"><img src="/collection/noir paris.jpeg" alt="NOIR PARIS" /></a>
+      <div class="product-content">
+        <p class="product-name">NOIR PARIS OUD</p>
+        <p class="product-price">₦9,500</p>
+        <a class="order-button" href="https://wa.me/2349012345678?text=I%20would%20like%20to%20order%20NOIR%20PARIS%20OUD" target="_blank">Order Now</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <a href="/ourcollection/24k edp/24kedp.html"><img src="/collection/24K.jpg" alt="24K" /></a>
+      <div class="product-content">
+        <p class="product-name">24K EDP</p>
+        <p class="product-price">₦8,900</p>
+        <a class="order-button" href="https://wa.me/2349012345678?text=I%20would%20like%20to%20order%2024K%20EDP" target="_blank">Order Now</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    font-family: "Amatic SC", cursive;
+}
+
+header {
+    background-color: black;
+    height: 70px;
+    display: flex;
+    align-content: center;
+}
+
+.navbar {
+    height: 50px;
+    /*background-color: red;*/
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.logo span {
+    display: flex;
+    align-items: center;
+    color: #ffff;
+    font-size: 32px;
+    font-weight: 700;
+    max-width: 300px;
+    width: 100%;
+}
+
+.nav-links {
+    /* border: 1px solid green;*/
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+
+}
+
+.nav-links ul li a {
+    color: #ffff;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.nav-links ul li a:hover {
+    color: burlywood;
+}
+
+#hero {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('background.jpg');
+    background-size: 100%;
+    background-position: cover;
+    background-repeat: no-repeat;
+    color: white;
+    height: calc(100vh - 70px);
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 80px;
+}
+
+#hero h2 {
+    font-size: 65px;
+    margin-bottom: 30px;
+}
+
+#hero img {
+    max-width: 300px;
+    width: 100%;
+    color: #ffffff;
+    animation: totate 5s infinite ease;
+}
+
+@keyframes totate {
+    0% {
+        transform: rotate(-45deg);
+    }
+
+    50% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(-45deg);
+    }
+}
+
+#hero a {
+    display: block;
+    color: #ffffff;
+    font-size: 65px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+    margin-top: 40px;
+    font-weight: 700;
+    transition: all .3s ease;
+}
+
+#hero a:hover {
+    background-color: #ffffff;
+    color: sandybrown;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 0;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    font-size: 25px;
+    text-align: center;
+    border: none;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Noir-Paris - Scentuary</title>
+  <link rel="stylesheet" href="/ourcollection/noir paris/noirparis.css">
+</head>
+<body>
+
+  <div class="product-page">
+    <div class="left-section">
+      <img src="/collection/noir paris.jpeg" alt="Noir Paris" class="product-image">
+      <h1 class="product-title">Noir Paris</h1>
+      <p class="product-description">
+        Noir Paris is a luxurious blend of warm amber, sweet vanilla, and rich spices — perfect for elegant occasions.
+      </p>
+
+      <div class="rating-stars">
+        <span onclick="rate(1)">★</span>
+        <span onclick="rate(2)">★</span>
+        <span onclick="rate(3)">★</span>
+        <span onclick="rate(4)">★</span>
+        <span onclick="rate(5)">★</span>
+      </div>
+
+      <a 
+        href="https://wa.me/2347015545650?text=Hello!%20I'm%20interested%20in%20ordering%20Noir%20Paris%20from%20Scentuary." 
+        target="_blank" 
+        class="order-button">
+        Order Now via WhatsApp
+      </a>
+    </div>
+
+    <div class="right-section">
+      <h2>Customer Reviews</h2>
+      <div id="reviews">
+        <div class="review">
+          <strong>Fatima:</strong>
+          <p>This scent is divine! Long-lasting and elegant.</p>
+          <div class="admin-reply"><strong>Scentuary:</strong> Thank you, Fatima! 💛</div>
+        </div>
+        <div class="review">
+          <strong>Chuka:</strong>
+          <p>Got this as a gift. Loved it!</p>
+        </div>
+      </div>
+
+      <form id="reviewForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <textarea id="comment" placeholder="Leave a review..." required></textarea>
+        <button type="submit">Post Review</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function rate(stars) {
+      const spans = document.querySelectorAll('.rating-stars span');
+      spans.forEach((s, i) => {
+        s.classList.toggle('active', i < stars);
+      });
+      alert(`Thanks for rating this product ${stars} star(s)!`);
+    }
+
+    document.getElementById("reviewForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const comment = document.getElementById("comment").value;
+
+      const newReview = document.createElement("div");
+      newReview.className = "review";
+      newReview.innerHTML = `<strong>${name}:</strong><p>${comment}</p>`;
+
+      document.getElementById("reviews").appendChild(newReview);
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
+
